@@ -1,0 +1,60 @@
+div.container {
+   flex: 1;
+   max-width: 480px;
+   margin: 0 auto;
+}
+
+div.calculator {
+   border: 1px #000 solid;
+   min-height: 100px;
+   margin: 40px 30px 30px;
+}
+
+div.calculator h1:first-child {
+   font-size: 2em;
+   text-align: center;
+   background-color: #990000;
+   color: #fff;
+   width: calc(100% + 20px);
+   position: relative;
+   left: -10px;
+}
+
+div.calculator h1:first-child::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: -10px;
+   border-style: solid;
+   border-width: 5px;
+   border-color: transparent #7c0000 #7c0000 transparent;
+}
+
+form.calculator-form {
+   padding: 0px 16px 16px;  
+}
+
+form.calculator-form div {
+   margin: 8px;
+}
+
+form.calculator-form label {
+   display: inline-block;
+   width: 50px;
+   text-align: right;
+}
+
+form.calculator-form input {
+   padding: 8px;
+}
+form.calculator-form span {
+   padding: 8px;
+   font-size: 1.5em;
+}
+
+form.calculator-form button {
+   padding: 8px;
+   width: 120px;
+   height: 40px;
+   cursor: pointer;
+}
